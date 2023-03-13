@@ -10,6 +10,7 @@
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "bootstrap": "^5.0.0-alpha1",
     "vue": "^3.2.47"
   },
   "devDependencies": {

@@ -1,5 +1,19 @@
+@import 'bootstrap/scss/bootstrap.scss';
 @import 'components/scrolleBar.scss';
 @import 'components/noteBoxPaper.scss';
 body{
     background-color: #4d7676;
+}
+input[type="radio"] + label{
+    color: #8383b6;
+    font-size: 16px;
+    margin-bottom: -5px !important;
+}
+input[type="radio"]:checked{
+    & + label{
+        color: #4747c2;
+    }
+    &{
+        display: none;
+    }
 }
