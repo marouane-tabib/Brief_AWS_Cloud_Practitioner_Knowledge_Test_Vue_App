@@ -9,18 +9,27 @@ input[type="radio"]:checked{
     & + label{
         color: #4747c2;
         transition: .1s;
-        &.fails:after{
+        &:after{
             content: '';
             width: 100%;
-            height: 3px;
-            background: #F004;
             position: absolute;
             left: 0;
+            transition: .3s;
+        }
+        &.fails::after{
+            background: #F004;
+            height: 3px;
             bottom: 12px;
             transform: rotateZ(.3deg);
-            // transition-delay: 1s;
-            transition-duration: .3s;
         }
+        &.succ::after{
+            background: #0996098a;
+            height: 3px;
+            position: absolute;
+            bottom: 7px;
+            transform: rotateZ(0.1deg);
+        }
+        
     }
     &{
         display: none;
